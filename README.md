@@ -1,5 +1,7 @@
 # Todo App with Music Player
-<br>
+
+
+![image](https://user-images.githubusercontent.com/113175990/236661792-0fdba0b9-f0d3-4373-ad98-f8fc33c20ca4.png)
 This project is a Todo app with a music player feature. It allows users to manage their daily tasks and listen to music while using the application.
 
 ## 🎵 Features
