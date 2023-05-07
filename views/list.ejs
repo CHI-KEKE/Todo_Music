@@ -1,0 +1,49 @@
+<%- include("header.ejs")-%>
+<div id="heading">
+  <h1><%= ListName %></h1>
+</div>
+<div id="itembox" class="box">
+  <% newListItems.forEach(function(item){ %>
+  <form action="/delete" method="post">
+    <div class="item">
+      <input
+        type="checkbox"
+        name="checkbox"
+        value="<%= item._id %>"
+        onChange="this.form.submit()"
+      />
+      <p><%= item.name %></p>
+    </div>
+    <input type="hidden" name="listname" value="<%= ListName %>" />
+  </form>
+  <% }); %>
+  <form class="item" action="/" method="POST">
+    <input
+      type="text"
+      name="newItem"
+      placeholder="What's your focus?"
+      autocomplete="off"
+    />
+    <button type="submit" name="list" value="<%= ListName %>">+</button>
+  </form>
+</div>
+<div class="music-box">
+    <audio src="music/jacinto-1.mp3"></audio>
+
+    <div class="progress-container" id="progress-container">
+      <div class="progress" id="progress"></div>
+      <div class="duration-wrapper">
+        <span id="current-time">0:00</span>
+        <span id="duration">2:06</span>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="player-controls">
+      <i class="fa-solid fa-backward" id="prev" title="Previous"></i>
+      <i class="fa-solid fa-play main-button" id="play" title="Play"></i>
+      <i class="fa-solid fa-forward" id="next" title="Next"></i>
+    </div>
+</div>
+<script src = "js/play.js"></script>
+<%- include("footer.ejs")-%>
