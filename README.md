@@ -73,4 +73,5 @@ http://localhost:3000
 This project was created as a part of a course on Todo app development from  the APP Brewery and Music Player app development from ZTM academy. Special thanks to the instructors!
 
 the APP Brewery : https://www.appbrewery.co/p/web-development-course-resources/
+</br>
 ZTM course 20 JS projects: https://github.com/zero-to-mastery/javascript20-projects
